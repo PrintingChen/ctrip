@@ -5,96 +5,24 @@
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
 	<title>ctrip - index</title>
 	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
 	<script>
-		var html = document.querySelector('#html');
-		var width = html.getBoundingClientRect();
-		console.log(width)
+		// var html = document.querySelector('#html');
+		// var width = html.getBoundingClientRect();
 	</script>
 	<script src="js/index.js"></script>
-	<style>
-		/*样式*/
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		html,body{
-			width: 100%;
-			height: 100%;
-		}
-		ul{list-style: none;}
-		a{text-decoration: none;}
-		.list{
-			width: 99%;
-			height: 40px;
-			margin: 10px auto;
-			border-radius: 5px;
-		}
-		.list ul{
-			width: 100%;
-			height: 100%;
-			display: flex;
-		}
-		.list ul li{
-			height: 100%;
-			flex: 1;
-			text-align: center;
-			border-right: 1px solid #fff;
-			line-height: 2.5;
-			background-color: #3d98ff;
-			color: #fff;
-		}
-		.list ul li:nth-child(n+2){
-			border-left: 0;
-		}
-		.box{
-			width: 100%;
-			height: 100px;
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-		}
-		.box .left{
-			flex: 1;
-			background-color: red;
-		}
-		.box .right{
-			flex: 2;
-			background-color: blue;
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
-			flex-direction: column;
-		}
-		.box .right .top{
-			flex: 1;
-			background-color: green;
-		}
-		.box .right .bottom{
-			flex: 1;
-			background-color: #ea6b51;
-		}
-
-	</style>
 </head>
 <body>
-	<div class="list">
-		<ul>
-			<li style="border-radius:5px 0 0 5px;">周边游</li>
-			<li>一日游</li>
-			<li>长线游</li>
-			<li style="border-radius: 0 5px 5px 0;">境外游</li>
-		</ul>
-	</div>
-	<div class="box">
-		<div class="left"></div>
-		<div class="right">
-			<div class="top"></div>
-			<div class="bottom"></div>
+	<header id="header">
+		<div class="h-search">
+			<input type="text" placeholder="搜索:目的地/酒店/景点/航班号">
+			<i class="icon-bg bg-size"></i>
 		</div>
-	</div>
+		<a href="#" class="personal">
+			<i class="icon-bg bg-size"></i>
+			<span>我&nbsp;的</span>
+		</a>
+	</header>
 </body>
 </html>

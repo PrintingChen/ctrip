@@ -1,0 +1,66 @@
+.icon-bg{
+	background-image: url(../img/icon.png);
+}
+.bg-size{
+	-webkit-background-size: 104px 327px;
+	background-size: 104px 327px;
+}
+#header{
+	width: 100%;
+	height: 44px;
+	background-color: rgb(246,246,246);
+	position: fixed;
+	left: 0;
+	top: 0;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#header .h-search{
+	flex: 1;
+	box-sizing: border-box;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#header .h-search input{
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	height: 22px;
+	border: 1px solid #666;
+	font-size: 12px;
+	color: #666;
+	position: relative;
+	padding-left: 22px;
+	box-sizing: border-box;
+}
+#header .h-search i{
+	display: block;
+	width: 15px;
+	height: 18px;
+	background-position: -59px -276px;
+	position: absolute;
+	left: 15px;
+    top: 13px;
+}
+#header .personal{
+	display: block;
+	flex-basis: 44px;
+	text-align: center;
+	align-self: center;
+}
+#header .personal i{
+	display: block;
+	width: 22px;
+	height: 22px;
+	background-position: -59px -193px;
+	margin-left: 11px;
+}
+#header .personal span{
+	font-size: 12px;
+	color: #099fde;
+}
